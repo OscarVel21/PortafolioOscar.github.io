@@ -229,7 +229,7 @@ article p{
         rgba(0,0,0,0.35),
         rgba(0,0,0,0.35)
     )
-    ,url('assets/principal.png');
+    ,url(assets/principal.png);
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center;
@@ -283,7 +283,7 @@ article p{
 }
 
 #somos-suelo .img-container{
-    background-image: url('assets/yo.jpg');
+    background-image: url(assets/yo.jpg);
     background-size: cover;
     position: right;
     background-position: center center;
@@ -341,7 +341,7 @@ article p{
     padding: 10px 10px;
 }
 #estudio .img-container{
-    background-image: url('assets/clase.jpg');
+    background-image: url(assets/clase.jpg);
     background-size: cover;
     position: right;
     background-position: center center;
@@ -355,7 +355,7 @@ article p{
 .Consultor{
     list-style-type: none;
     list-style-position: inside;
-    list-style-image:url("assets/mundo.png");
+    list-style-image:url(assets/mundo.png);
 }
 .post-list2{
     display: flex;
@@ -376,7 +376,7 @@ article p{
 .Ingemann{
     list-style-type: none;
     list-style-position: inside;
-    list-style-image:url("assets/meteorologia.png");
+    list-style-image:url(assets/meteorologia.png);
 }
 
 .noticia{
@@ -614,7 +614,7 @@ article p{
     padding: 2px;
     list-style-type: disc;
     list-style-position: inside;
-    /*list-style-image:url("assets/mundo.png");*/
+    /*list-style-image:url(assets/mundo.png);*/
 }
  @media(max-width:840px){
         .content{
@@ -705,7 +705,7 @@ article p{
                 rgba(0,0,0,0.5),
                 rgba(0,0,0,0.5)
             )
-            ,url('assets/portada.png');
+            ,url(assets/principal.png);
             background-repeat: no-repeat;
             background-size: cover ;
             background-position: center;
