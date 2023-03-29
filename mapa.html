@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <script src="https://kit.fontawesome.com/05925f0c26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <link rel="stylesheet" href="index.css">
+
+    
+</head>
+<body>
+    <header>
+       <div class="header__superior">
+            <div class="logo">
+                <img src="/assets/logo_una.png" alt="">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="¿Qué deseas buscar?">
+            </div>
+        </div>
+        <div class="container__menu">
+
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label id= "label__check" for="check__menu">
+                    <i class="fa-solid fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="selected"></a></li>
+                        <li><a href="#">Descargas</a>
+                            <ul>
+                                <li><a href="mapa.html">Mapa de suelo</a></li>
+                                <li><a href="#">Mapa de cultivo</a></li>
+                                <li><a href="#">Mapa de propiedades</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Quienes Somos</a></li>
+                        <li><a href="#">Articulos</a></li>
+                        <li><a href="#">Repositorio</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <section id="selector">
+        <div class="container">
+            <select name="selected-location" id="selected-location">
+                <option value="-1">Seleccione un lugar</option>
+                <option value=" 13.632510,-86.465428">Ocotal</option>
+                <option value=" 13.082704,-85.991443">Jinotega</option>
+                <option value=" 12.938921,-85.884306">Matagalpa</option>
+                <option value=" 12.848635,-86.096972">Sebaco</option>
+            </select> 
+           
+        </div>   
+        
+    </section> 
+
+    <section id="mapa-se">
+        <div class="container">
+            <div id="map"> </div>
+        </div>   
+        
+    </section> 
+    
+    
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     
+    <script src="/mapa.js"></script>
+</body>
+</html>
